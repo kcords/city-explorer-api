@@ -32,7 +32,7 @@ app.get('/weather', ({query}, res, next) => {
   }
 })
 
-app.use(({message}, _req, res) => {
+app.use(({message}, _req, res, _next) => {
   res
     .status(500)
     .send(message)
