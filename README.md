@@ -1,32 +1,61 @@
 # Project Name
 
-**Author**: Your Name Goes Here
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Author**: Kyle Cordell
+**Version**: 1.0.0
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+
+This repo provides the back end API routes for the City Explorer application through Node.js
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+
+Clone the repo, then run:
+
+```
+npm install
+npm start
+```
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+
+* Node.js
+* Express.js
+* Axios
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+08-01-01 - Initial server release with weather API using test data
 
 ## Credit and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
+---
 
-Name of feature: ________________________________
+```
+Name of feature: Server Setup
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 45min
+Start time: n/a
+Finish time: n/a
+Actual time needed to complete: 45min
+```
 
-Start time: _____
+```
+Name of feature: Implement Weather Route
 
-Finish time: _____
+Estimate of time needed to complete: 20min
+Start time: n/a
+Finish time: n/a
+Actual time needed to complete: 20min
+```
 
-Actual time needed to complete: _____
+```
+Name of feature: Implement Error Handling
+
+Estimate of time needed to complete: 30min
+Start time: n/a
+Finish time: n/a
+Actual time needed to complete: 2hr
+```
+
+---
+![wwrc](/wrrc.png)
