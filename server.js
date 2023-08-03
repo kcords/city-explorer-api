@@ -17,20 +17,19 @@ app.get('/', (req, res, next) => {
     .send('Default route is working!')
 })
 
-app.get('/weather', ({query}, res, next) => {
+app.get("/weather", async ({ query }, res, next) => {
   try {
     const { searchQuery: city_name, lat, lon } = query;
-    const cityForecast = getCityForecast({city_name, lat, lon});
+    const cityForecast = await getCityForecast({ city_name, lat, lon });
+
     if (!cityForecast) {
-      throw new Error(`No forecast found for the requested city ${city_name}`)
+      throw new Error(`No forecast found for the requested city ${city_name}`);
     }
-    res
-      .status(200)
-      .send(cityForecast)
-  } catch(error) {
+    res.status(200).send(cityForecast);
+  } catch (error) {
     next(error);
   }
-})
+});
 
 app.use(({message}, _req, res, _next) => {
   res
