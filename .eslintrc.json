@@ -39,7 +39,7 @@
     "no-undefined": "off",
     "quotes": [
       "warn",
-      "single",
+      "double",
       {
         "allowTemplateLiterals": true
       }
