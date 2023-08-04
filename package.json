@@ -1,6 +1,6 @@
 {
   "name": "city-explorer-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node api server for city explorer",
   "main": "server.js",
   "scripts": {

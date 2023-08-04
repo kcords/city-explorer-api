@@ -1,7 +1,7 @@
 # Project Name
 
 **Author**: Kyle Cordell
-**Version**: 1.0.0
+**Version**: 1.0.1
 
 ## Overview
 
@@ -24,7 +24,8 @@ npm start
 
 ## Change Log
 
-08-01-01 - Initial server release with weather API using test data
+08-03-23 - Integrated API data from weatherbit and added movies endpoint using data from TMDB
+08-01-23 - Initial server release with weather API using test data
 
 ## Credit and Collaborations
 
@@ -55,6 +56,24 @@ Estimate of time needed to complete: 30min
 Start time: n/a
 Finish time: n/a
 Actual time needed to complete: 2hr
+```
+
+```
+Name of feature: Implement weather API data
+
+Estimate of time needed to complete: 45min
+Start time: 6:30pm
+Finish time: 9:30pm
+Actual time needed to complete: 3hr
+```
+
+```
+Name of feature: Implement movies API data
+
+Estimate of time needed to complete: 1hr
+Start time: 9:30pm
+Finish time: 11:45pm
+Actual time needed to complete: 2.25hr
 ```
 
 ---
