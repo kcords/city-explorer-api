@@ -4,7 +4,7 @@ const axios = require("axios");
 
 const WEATHER_API_BASE_URL = "https://api.weatherbit.io/v2.0/forecast/daily";
 
-const getCityForecast = async ({ city_name, lat, lon }) => {
+const getCityForecast = async ({ lat, lon }) => {
   const {
     data: { data: forecastData },
   } = await axios(
