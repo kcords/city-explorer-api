@@ -4,6 +4,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 
+const { getAreaMap } = require("./modules/map");
 const { getCityForecast } = require("./modules/forecast");
 const { getTopMovies } = require("./modules/movies");
 
@@ -17,6 +18,7 @@ app.get("/", (req, res, next) => {
   res.status(200).send();
 });
 
+app.get("/map", getAreaMap);
 app.get("/weather", getCityForecast);
 app.get("/movies", getTopMovies);
 
