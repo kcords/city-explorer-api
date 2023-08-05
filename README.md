@@ -1,7 +1,7 @@
-# Project Name
+# City Explorer
 
 **Author**: Kyle Cordell
-**Version**: 1.0.1
+**Version**: 1.0.2
 
 ## Overview
 
@@ -24,8 +24,9 @@ npm start
 
 ## Change Log
 
-08-03-23 - Integrated API data from weatherbit and added movies endpoint using data from TMDB
-08-01-23 - Initial server release with weather API using test data
+* 08-05-23 - Modularized route data and added map route for LocationIQ API
+* 08-03-23 - Integrated API data from weatherbit and added movies endpoint using data from TMDB
+* 08-01-23 - Initial server release with weather API using test data
 
 ## Credit and Collaborations
 
@@ -74,6 +75,15 @@ Estimate of time needed to complete: 1hr
 Start time: 9:30pm
 Finish time: 11:45pm
 Actual time needed to complete: 2.25hr
+```
+
+```
+Name of feature: Modularize route logic
+
+Estimate of time needed to complete: 1hr
+Start time: 1pm
+Finish time: 2pm
+Actual time needed to complete: 1hr
 ```
 
 ---
