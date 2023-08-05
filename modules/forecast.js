@@ -8,12 +8,16 @@ const getCityForecast = ({ query: { searchQuery, lat, lon } }, res, next) => {
   const queryUrl = `${WEATHER_API_BASE_URL}?key=${process.env.WEATHER_API_KEY}&lat=${lat}&lon=${lon}`;
 
   axios(queryUrl)
-    .then(({ data }) => {
-      if (data?.length > 0) return data;
+    .then(({ data: { data: forecastData } }) => {
+      if (forecastData?.length > 0) return forecastData;
       throw new Error(`No forecast found for ${searchQuery}`);
     })
-    .then((data) => data.map((forecast) => new Forecast(forecast)))
-    .then((formattedData) => res.status(200).send(formattedData))
+    .then((forecastData) =>
+      forecastData.map((forecast) => new Forecast(forecast))
+    )
+    .then((formattedForecastData) =>
+      res.status(200).send(formattedForecastData)
+    )
     .catch((error) => next(error));
 };
 

@@ -9,12 +9,12 @@ const getTopMovies = ({ query: { searchQuery } }, res, next) => {
   const queryUrl = `${MOVIE_API_BASE_URL}?page=1&sort_by=popularity.desc&api_key=${process.env.MOVIE_API_KEY}&query=${searchQuery}`;
 
   axios(queryUrl)
-    .then(({ data }) => {
-      if (data?.length > 0) return data;
+    .then(({ data: { results: movieData } }) => {
+      if (movieData?.length > 0) return movieData;
       throw new Error(`No movies found for ${searchQuery}`);
     })
-    .then((data) => data.map((movie) => new Movie(movie)))
-    .then((formattedData) => res.status(200).send(formattedData))
+    .then((movieData) => movieData.map((movie) => new Movie(movie)))
+    .then((formattedMovieData) => res.status(200).send(formattedMovieData))
     .catch((error) => next(error));
 };
 
