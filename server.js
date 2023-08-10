@@ -4,9 +4,10 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 
-const { getAreaMap } = require("./modules/map");
-const { getCityForecast } = require("./modules/forecast");
-const { getTopMovies } = require("./modules/movies");
+const { getMap } = require("./modules/map");
+const { getWeather } = require("./modules/weather");
+const { getMovies } = require("./modules/movies");
+const { getYelp } = require("./modules/yelp");
 
 const app = express();
 
@@ -18,9 +19,10 @@ app.get("/", (req, res, next) => {
   res.status(200).send();
 });
 
-app.get("/map", getAreaMap);
-app.get("/weather", getCityForecast);
-app.get("/movies", getTopMovies);
+app.get("/map", getMap);
+app.get("/weather", getWeather);
+app.get("/movies", getMovies);
+app.get("/yelp", getYelp);
 
 app.use(({ message }, _req, res, _next) => {
   res.status(500).send(message);
