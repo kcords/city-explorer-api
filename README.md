@@ -86,5 +86,23 @@ Finish time: 2pm
 Actual time needed to complete: 1hr
 ```
 
+```
+Name of feature: Implement API cache
+
+Estimate of time needed to complete: 2hr
+Start time: 7pm
+Finish time: 9pm
+Actual time needed to complete: 2hr
+```
+
+```
+Name of feature: Implement yelp API route
+
+Estimate of time needed to complete: 1hr
+Start time:
+Finish time:
+Actual time needed to complete: 1hr
+```
+
 ---
 ![wwrc](/wrrc.png)
